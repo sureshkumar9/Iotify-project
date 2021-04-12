@@ -2,5 +2,26 @@
     .flex-header {
         display: flex;
         flex-direction: column;
+        .nav_link ul {
+            flex-direction: column;
+            li {
+                margin-top: 12px
+            }
+        }
+        .nav_link_one ul {
+            flex-direction: column;
+            li {
+                margin-top: 12px
+            }
+        }
+    }
+    .flex_artical {
+        .bg_two {
+            display: none;
+        }
+        .card {
+            padding: 0px;
+            margin: 0px;
+        }
     }
 }

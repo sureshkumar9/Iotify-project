@@ -12,6 +12,8 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 .container {
@@ -42,10 +44,9 @@ ul li {
 
 header {
   background-color: #24126a;
-  width: 100%;
-  border-bottom-right-radius: 50% 75px;
-  border-bottom-left-radius: 50% 75px;
-  background-image: radial-gradient(closest-side at 70% 80%, #401357, #64188a, #24126a);
+  border-bottom-right-radius: 100% 206px;
+  border-bottom-left-radius: 100% 206px;
+  background-image: radial-gradient(closest-side at 70% 70%, #401357, #64188a, #24126a);
 }
 
 .flex-header {
@@ -56,6 +57,7 @@ header {
 }
 .flex-header .nav_link_one ul,
 .flex-header .nav_link ul {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -79,14 +81,23 @@ header {
   text-decoration: none;
 }
 
-.nav_link_one .bg_phone {
-  background-color: #fa0707;
-  border-radius: 100%;
-}
-
 .nav_link_one li.bg_sign {
   border-radius: 23px;
   background-color: #563299;
+  padding-left: 30px;
+  padding-right: 28px;
+}
+.nav_link_one a {
+  text-align: center;
+}
+.nav_link_one a .fa-phone-alt {
+  background-color: red;
+  border-radius: 50%;
+  width: 30px;
+  padding: 7px;
+}
+.nav_link_one a .fa-phone-alt:hover {
+  background-color: #24126a;
 }
 
 .logo img {
@@ -94,20 +105,28 @@ header {
 }
 
 .flex_articale .card {
-  width: calc(100% - 600px);
-  margin: 200px 0px;
+  width: 361px;
+  margin: 200px 0px 230px;
+  color: #fff;
+  padding: 6px;
 }
-.flex_articale .card h1 {
-  color: #ffffff;
-  font-family: "Circular Std Medium";
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 77px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+.flex_articale .card input {
+  width: 250px;
+  border-bottom-left-radius: 100% 206px;
+  border-top-left-radius: 100% 206px;
+  padding: 12px;
+  outline: none;
+  border: none;
+}
+.flex_articale .card button {
+  border-bottom-right-radius: 100% 70px;
+  border-top-right-radius: 100% 70px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  background-color: #fb3a5a;
+  margin-left: -12px;
+  color: #fff;
 }
 
 .paragraph {
@@ -140,19 +159,24 @@ header {
   width: 55%;
 }
 
-.new {
-  width: 300px;
-  margin-left: 100px;
-}
-
 .flex_articale {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex_articale .new {
+  width: 500px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.flex_articale .new img {
+  width: 100%;
 }
 
 .bg_two {
   background-color: #24126a;
-  border-top-right-radius: 30%;
-  border-bottom-right-radius: 30%;
+  border-top-right-radius: 50% 267px;
+  border-bottom-right-radius: 50% 267px;
   position: absolute;
   margin-left: -120px;
 }
@@ -167,9 +191,10 @@ header {
   justify-content: space-between;
 }
 .flex_artical .card {
-  width: calc(100% - 600px);
+  width: 500px;
+  height: 499px;
   margin-left: 40%;
-  padding: 70px 0px;
+  padding: 60px 0px;
 }
 .flex_artical .card button {
   padding: 12px;
@@ -591,6 +616,26 @@ header {
   .flex-header {
     display: flex;
     flex-direction: column;
+  }
+  .flex-header .nav_link ul {
+    flex-direction: column;
+  }
+  .flex-header .nav_link ul li {
+    margin-top: 12px;
+  }
+  .flex-header .nav_link_one ul {
+    flex-direction: column;
+  }
+  .flex-header .nav_link_one ul li {
+    margin-top: 12px;
+  }
+
+  .flex_artical .bg_two {
+    display: none;
+  }
+  .flex_artical .card {
+    padding: 0px;
+    margin: 0px;
   }
 }
 

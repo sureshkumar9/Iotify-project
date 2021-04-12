@@ -1,7 +1,7 @@
         .bg_two {
             background-color: $primary_color;
-            border-top-right-radius: 30%;
-            border-bottom-right-radius: 30%;
+            border-top-right-radius: 50% 267px;
+            border-bottom-right-radius: 50% 267px;
             position: absolute;
             margin-left: -120px;
             img {
@@ -13,9 +13,10 @@
         .flex_artical {
             @include flex(space-between);
             .card {
-                width: calc(100% - 600px);
+                width: 500px;
+                height: 499px;
                 margin-left: 40%;
-                padding: 70px 0px;
+                padding: 60px 0px;
                 button {
                     padding: 12px;
                     background-color: red;
