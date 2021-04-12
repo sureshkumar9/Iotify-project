@@ -1,3 +1,17 @@
-body {
-    background-color: $bg;
-}
+    @mixin header_link {
+        color: $text_color_one;
+        font-family: $font_family_one;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 29px;
+        text-align: left;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    
+    @mixin flex ($space) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: $space;
+    }

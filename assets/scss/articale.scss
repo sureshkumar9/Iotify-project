@@ -1,0 +1,90 @@
+        .bg_two {
+            background-color: $primary_color;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+            position: absolute;
+            margin-left: -120px;
+            img {
+                width: 200px;
+                margin: 35px 150px;
+            }
+        }
+        
+        .flex_artical {
+            @include flex(space-between);
+            .card {
+                width: calc(100% - 600px);
+                margin-left: 40%;
+                padding: 70px 0px;
+                button {
+                    padding: 12px;
+                    background-color: red;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                }
+            }
+        }
+        
+        .flex_litify {
+            @include flex(space-between);
+            .card {
+                width: calc(100% - 600px);
+            }
+        }
+        
+        .video_section {
+            box-shadow: 31px -29px 0px 3px #24126a;
+        }
+        
+        .rapid_flex {
+            display: flex;
+            .img_artical img {
+                width: 70%;
+            }
+            .card {
+                width: calc(100% - 600px);
+                .card-body {
+                    padding-top: 89px;
+                }
+            }
+        }
+        
+        // newsletter section and subcriber
+        .newsletter {
+            background-color: $primary_color;
+            margin: 12px 0px;
+            .newsletter_one {
+                display: flex;
+                flex-wrap: wrap;
+                .img_curve img {
+                    width: 40%;
+                    margin-left: -100px;
+                }
+                .img_curve_one {
+                    float: inline-end;
+                    margin-left: 700px;
+                    img {
+                        width: 40%;
+                        float: right;
+                    }
+                }
+                .subcriber {
+                    width: 100%;
+                    text-align: center;
+                    h3,
+                    p {
+                        color: #fff;
+                    }
+                    button,
+                    input {
+                        padding: 12px;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }

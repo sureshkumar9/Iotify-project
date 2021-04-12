@@ -1,0 +1,30 @@
+.testimonial {
+    margin-left: 50%;
+    p {
+        padding-left: 30px;
+    }
+}
+
+.card_one {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-left {
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+    margin-left: 12px;
+    p {
+        color: #fff;
+    }
+    .new_aim {
+        max-height: 60px;
+    }
+}
+
+.author_card {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 50px;
+}

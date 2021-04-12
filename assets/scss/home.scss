@@ -1,0 +1,40 @@
+html,
+body {
+    padding: 0;
+    border: 0;
+    font-family: $font_family_one;
+    max-width: 100%;
+    margin: $autoMargin;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: $autoMargin;
+}
+
+.space_one {
+    padding: 95px 0px
+}
+
+.space_two {
+    padding: 281px 0px
+}
+
+.space_three {
+    padding: 100px 0px
+}
+
+.space_four {
+    padding: 206px 0px
+}
+
+*,
+ul li {
+    list-style: none;
+}
