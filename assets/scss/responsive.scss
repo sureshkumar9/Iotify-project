@@ -5,13 +5,18 @@
         .nav_link ul {
             flex-direction: column;
             li {
-                margin-top: 12px
+                margin-top: 15px;
+                margin-left: 0px;
             }
         }
         .nav_link_one ul {
             flex-direction: column;
             li {
-                margin-top: 12px
+                margin-top: 15px;
+                margin-left: 0px;
+            }
+            .bg_sign {
+                text-align: center;
             }
         }
     }
@@ -19,9 +24,9 @@
         .bg_two {
             display: none;
         }
-        .card {
+        .artical_one {
             padding: 0px;
-            margin: 0px;
+            margin: 0px !important;
         }
     }
 }

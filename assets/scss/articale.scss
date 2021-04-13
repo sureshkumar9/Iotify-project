@@ -1,91 +1,191 @@
-        .bg_two {
-            background-color: $primary_color;
-            border-top-right-radius: 50% 267px;
-            border-bottom-right-radius: 50% 267px;
-            position: absolute;
-            margin-left: -120px;
-            img {
-                width: 200px;
-                margin: 35px 150px;
-            }
-        }
-        
+    .background_img {
+        background-image: url("../img/Rectangle_792@2x.png");
+        background-size: cover;
+        background-position: 100px -600px;
+        background-repeat: no-repeat;
         .flex_artical {
             @include flex(space-between);
-            .card {
+            .bg_two {
+                background-color: $primary_color;
+                border-top-right-radius: 50% 267px;
+                border-bottom-right-radius: 50% 267px;
+                position: absolute;
+                margin-left: -120px;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+                img {
+                    width: 300px;
+                    margin: 30px 150px 0px;
+                }
+            }
+            .artical_one {
                 width: 500px;
-                height: 499px;
-                margin-left: 40%;
-                padding: 60px 0px;
+                margin-left: 50%;
+                h3 {
+                    @include text_style_three;
+                    color: #252728;
+                    font-size: 30px;
+                    font-weight: 600;
+                    text-align: left;
+                    padding: 8px 0px;
+                }
+                p {
+                    color: #576471;
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: -0.11px;
+                    line-height: 33px;
+                    text-align: left;
+                    span {
+                        display: block;
+                        padding: 15px 0px;
+                    }
+                }
                 button {
                     padding: 12px;
-                    background-color: red;
-                    border-radius: 4px;
+                    border-radius: 29px;
+                    background-color: #fb3a5a;
                     border: none;
                     outline: none;
                     color: white;
+                    margin: 10px 0px;
                 }
             }
         }
-        
-        .flex_litify {
+    }
+    
+    .background_img_one {
+        background-image: url("");
+        background-size: cover;
+        background-position: -300px -850px;
+        background-repeat: no-repeat;
+        .flex_iotify {
             @include flex(space-between);
-            .card {
-                width: calc(100% - 600px);
+            .artical_two {
+                width: 550px;
+                .paragraph_two {
+                    color: #fa2e57;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    line-height: normal;
+                    text-align: left;
+                    padding: 15px 0px;
+                }
+                h3 {
+                    @include text_style_three;
+                    color: #252728;
+                    font-size: 30px;
+                    font-weight: 600;
+                    text-align: left;
+                    padding: 8px 0px;
+                }
+                p {
+                    color: #576471;
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: -0.11px;
+                    line-height: 33px;
+                    text-align: left;
+                    span {
+                        display: block;
+                        padding: 15px 0px;
+                    }
+                }
+            }
+            video {
+                box-shadow: 31px -29px 0px 3px #24126a;
             }
         }
-        
-        .video_section {
-            box-shadow: 31px -29px 0px 3px #24126a;
+    }
+    
+    .background_img_two {
+        background-image: url("../img/Rectangle_601@2x.png");
+        background-size: cover;
+        background-position: -500px -750px;
+        background-repeat: no-repeat;
+        .flex_services {
+            @include flex(space-between);
+            .bg_three {
+                width: 550px;
+                margin-top: -100px;
+                img {
+                    width: 550px;
+                }
+            }
+            .artical_three {
+                width: 550px;
+                .services {
+                    color: #fa2e57;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: normal;
+                    line-height: normal;
+                    text-align: left;
+                    padding: 15px 0px;
+                }
+                h3 {
+                    @include text_style_three;
+                    color: #252728;
+                    font-size: 30px;
+                    font-weight: 600;
+                    text-align: left;
+                    padding: 8px 0px;
+                }
+                p {
+                    color: #576471;
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: -0.11px;
+                    line-height: 33px;
+                    text-align: left;
+                    span {
+                        display: block;
+                        padding: 15px 0px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
         }
-        
-        .rapid_flex {
+    }
+    
+    // newsletter section and subcriber
+    .newsletter {
+        background-color: $primary_color;
+        margin: 12px 0px;
+        .newsletter_one {
             display: flex;
-            .img_artical img {
-                width: 70%;
+            flex-wrap: wrap;
+            .img_curve img {
+                width: 40%;
+                margin-left: -100px;
             }
-            .card {
-                width: calc(100% - 600px);
-                .card-body {
-                    padding-top: 89px;
-                }
-            }
-        }
-        
-        // newsletter section and subcriber
-        .newsletter {
-            background-color: $primary_color;
-            margin: 12px 0px;
-            .newsletter_one {
-                display: flex;
-                flex-wrap: wrap;
-                .img_curve img {
+            .img_curve_one {
+                float: inline-end;
+                margin-left: 700px;
+                img {
                     width: 40%;
-                    margin-left: -100px;
+                    float: right;
                 }
-                .img_curve_one {
-                    float: inline-end;
-                    margin-left: 700px;
-                    img {
-                        width: 40%;
-                        float: right;
-                    }
+            }
+            .subcriber {
+                width: 100%;
+                text-align: center;
+                h3,
+                p {
+                    color: #fff;
                 }
-                .subcriber {
-                    width: 100%;
-                    text-align: center;
-                    h3,
-                    p {
-                        color: #fff;
-                    }
-                    button,
-                    input {
-                        padding: 12px;
-                        border-radius: 5px;
-                        outline: none;
-                        border: none;
-                        cursor: pointer;
-                    }
+                button,
+                input {
+                    padding: 12px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
                 }
             }
         }
+    }

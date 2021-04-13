@@ -1,116 +1,109 @@
-        header {
-            background-color: $primary_color;
-            border-bottom-right-radius: 100% 206px;
-            border-bottom-left-radius: 100% 206px;
-            background-image: radial-gradient(closest-side at 70% 70%, #401357, #64188a, $primary_color);
-        }
-        
-        .flex-header {
-            @include flex(space-between);
-            padding-top: 12px;
-            .nav_link_one ul,
-            .nav_link ul {
-                margin-top: 20px;
-                @include flex(space-between);
-                li {
-                    margin-left: 25px;
-                    list-style: none;
-                    a {
-                        @include header_link;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-        
-        .nav_link_one {
-            li.bg_sign {
-                border-radius: 23px;
-                background-color: #563299;
-                padding-left: 30px;
-                padding-right: 28px;
-            }
+header {
+    background-color: $primary_color;
+    border-bottom-right-radius: 100% 206px;
+    border-bottom-left-radius: 100% 206px;
+    background-image: radial-gradient(closest-side at 70% 70%, #401357, #64188a, $primary_color);
+}
+
+.flex-header {
+    @include flex(space-between);
+    .logo img {
+        padding-top: 13px;
+    }
+    .nav_link_one ul,
+    .nav_link ul {
+        margin-top: 20px;
+        @include flex(space-between);
+        li {
+            margin-left: 20px;
+            list-style: none;
             a {
-                text-align: center;
-                .fa-phone-alt {
-                    background-color: red;
-                    border-radius: 50%;
-                    width: 30px;
-                    padding: 7px;
-                    &:hover {
-                        background-color: $primary_color;
-                    }
+                @include header_link;
+                text-decoration: none;
+                &:hover {
+                    border-bottom-style: solid;
+                    border-width: 1px;
+                    border-color: #fb3a5a;
                 }
             }
         }
-        
-        .logo img {
-            padding-top: 13px;
-        }
-        
-        .flex_articale .card {
-            width: 361px;
-            margin: 200px 0px 230px;
-            color: #fff;
-            padding: 6px;
-            input {
-                width: 250px;
-                border-bottom-left-radius: 100% 206px;
-                border-top-left-radius: 100% 206px;
-                padding: 12px;
-                outline: none;
-                border: none;
-            }
-            button {
-                border-bottom-right-radius: 100% 70px;
-                border-top-right-radius: 100% 70px;
-                padding: 12px;
-                outline: none;
-                border: none;
-                background-color: #fb3a5a;
-                margin-left: -12px;
-                color: #fff;
+    }
+    li.bg_sign {
+        border-radius: 23px;
+        background-color: #563299;
+        padding-left: 30px;
+        padding-right: 28px;
+    }
+    a {
+        text-align: center;
+        .fa-phone-alt {
+            background-color: #fb3a5a;
+            border-radius: 50%;
+            width: 30px;
+            padding: 7px;
+            &:hover {
+                background-color: $primary_color;
             }
         }
-        
-        .paragraph {
-            color: #ded9f8;
-            font-family: Poppins;
-            font-size: 24px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: -0.48px;
-            line-height: 27px;
-            text-align: left;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
+    }
+}
+
+.flex_articale .card {
+    width: 361px;
+    margin: 200px 0px 230px;
+    color: #fff;
+    padding: 6px;
+    .badge {
+        color: #1d1d1e;
+        background-color: #24bff8;
+        padding: 4px;
+        width: fit-content;
+        border-radius: 7px;
+        margin: 10px 0px;
+    }
+    h1 {
+        margin: 20px 0px;
+    }
+    p {
+        color: #ded9f8;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    input {
+        width: 250px;
+        border-bottom-left-radius: 100% 250px;
+        border-top-left-radius: 100% 250px;
+        padding: 12px;
+        outline: none;
+        border: none;
+    }
+    button {
+        border-bottom-right-radius: 100% 70px;
+        border-top-right-radius: 100% 70px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background-color: #fb3a5a;
+        margin-left: -12px;
+        color: #fff;
+        @include Button_text_style_two
+    }
+}
+
+.flex_articale .card input[type="text"] {
+    padding: 14px;
+    border-radius: 589px;
+    width: 55%;
+}
+
+.flex_articale {
+    @include flex(space-between);
+    .banner_image {
+        width: 500px;
+        margin-top: 100px;
+        margin-right: 100px;
+        img {
+            width: 100%;
         }
-        
-        .badge {
-            background-color: #24bff8;
-            width: fit-content;
-            color: $text_color_two;
-            border-radius: 4px;
-            p {
-                padding: 4px;
-            }
-        }
-        
-        .flex_articale .card input[type="text"] {
-            padding: 14px;
-            border-radius: 589px;
-            width: 55%;
-        }
-        
-        .flex_articale {
-            @include flex(space-between);
-            .new {
-                width: 500px;
-                margin-top: 100px;
-                margin-right: 100px;
-                img {
-                    width: 100%;
-                }
-            }
-        }
+    }
+}
