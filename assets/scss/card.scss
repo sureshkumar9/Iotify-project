@@ -1,84 +1,70 @@
 .bg_section {
     background-image: url(../img/Rectangle_539.png);
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .data_flex {
     display: flex;
     flex-wrap: wrap;
     .price {
+        margin-top: 100px;
         width: 100%;
         text-align: center;
         justify-content: center;
         p {
-            /* Style for "PRICING" */
             color: #fa2952;
-            font-family: Poppins;
             font-size: 24px;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: -0.48px;
             line-height: 1px;
             text-transform: uppercase;
-            /* Text style for "PRICING" */
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            h3 {
-                /* Style for "Simple, Tr" */
-                color: #122d48;
-                font-family: Poppins;
-                font-size: 32px;
-                font-weight: 500;
-                font-style: normal;
-                letter-spacing: -0.64px;
-                line-height: 1px;
-                text-align: left;
-                /* Text style for "Simple, Tr" */
-                font-style: normal;
-                letter-spacing: normal;
-                line-height: normal;
-            }
+        }
+        h3 {
+            padding: 35px 0px;
+            color: #122d48;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1px;
         }
     }
     .startup {
-        /* Style for "Rectangle" */
-        margin: 12px;
-        width: 30%;
+        margin: 20px;
+        width: 343px;
         border-radius: 5px;
         border: 1px solid #e3e7ea;
         background-color: #ffffff;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         .content {
-            width: 100%;
             text-align: center;
             justify-content: center;
+            padding-top: 50px;
+            .standup {
+                margin: 12px 0px
+            }
         }
         table {
             width: 100%;
             text-align: center;
+            margin-top: 33px;
             tr td {
                 padding: 12px 0px;
+                color: #969fb0;
             }
         }
         .button_card {
-            width: 100%;
-            text-align: center;
-            margin: 30px 0px;
-            button {
-                color: #fa2952;
-                width: 216px;
-                padding: 12px;
-                border: none;
-                outline: none;
-                /* Style for "Rectangle" */
-                border-radius: 5px;
-                background-color: rgba(250, 41, 82, 0.1);
-            }
+            width: 116px;
+            margin: 0px 50px 50px 120px;
+            color: #fa2952;
+            padding: 12px;
+            border-radius: 5px;
+            background-color: rgba(250, 41, 82, 0.1);
+            border: none;
+            outline: none;
         }
         hr {
-            width: 80%;
+            width: 240px;
+            text-align: center;
+            margin: 15px 50px 10px 50px;
         }
         &:hover {
             transition: 1s;
@@ -96,44 +82,55 @@
 
 // <!-- card section two -->
 .blog {
-    width: 30%;
+    width: 300px;
     background-color: #ffffff;
-    margin: 12px;
+    margin: 30px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     .card-img-top {
-        max-width: 20rem;
+        width: 300px;
+        img {
+            width: 300px;
+        }
     }
     p {
-        /* Style for "A blog by" */
         color: #7f7c7c;
-        font-family: Arial;
         font-size: 14px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 17px;
-        /* Text style for "A blog by" */
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        padding-left: 30px
+        margin: 15px 0px 0px 15px;
     }
     h4 {
-        /* Style for "Device Sim" */
         color: #1e1d1d;
-        font-family: "Open Sans";
-        font-size: 25px;
-        font-weight: 600;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 30px;
-        /* Text style for "Device Sim" */
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        padding-left: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px 0px 20px 15px;
     }
     .author {
         display: flex;
-        padding-left: 30px;
+        margin: 15px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        .name_date {
+            margin: 3px;
+            p {
+                margin-left: -2px;
+                margin-top: 0px
+            }
+            h5 {
+                color: #413f3f;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 11px;
+            }
+        }
+        label {
+            margin-left: 90px;
+            padding: 2px;
+        }
+        label::before {
+            content: url('../img/Layer_7_copy.png');
+            position: absolute;
+            margin-left: -33px;
+        }
     }
 }

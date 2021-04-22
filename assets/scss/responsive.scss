@@ -29,4 +29,10 @@
             margin: 0px !important;
         }
     }
+    .flex_articale .banner_image img {
+        display: none;
+    }
+    .flex_iotify {
+        flex-direction: column-reverse;
+    }
 }

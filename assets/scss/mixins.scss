@@ -1,49 +1,40 @@
-    @mixin header_link {
-        @include text_style_two;
-        color: $text_color_one;
-        font-family: $font_family_one;
-        font-size: 16px;
-        line-height: 29px;
-        text-align: left;
-    }
-    
-    @mixin flex ($space) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: $space;
-    }
-    
-    @mixin text_style_one {
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        font-style: normal;
-        font-weight: 400;
-    }
-    
-    @mixin text_style_two {
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        font-style: normal;
-        font-weight: 500;
-    }
-    
-    @mixin text_style_three {
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        font-style: normal;
-        font-weight: 600;
-    }
-    
-    @mixin Button_text_style_two {
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        font-style: normal;
-        font-weight: 500;
-        color: #ffffff;
-        font-family: Poppins;
-        text-align: left;
-    }
+  @mixin flex ($space) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: $space;
+  }
+  
+  @mixin text_style_one {
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      font-style: normal;
+      font-weight: 400;
+  }
+  
+  @mixin text_style_two {
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      font-style: normal;
+      font-weight: 500;
+  }
+  
+  @mixin text_style_three {
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      font-style: normal;
+      font-weight: 600;
+  }
+  
+  @mixin Button_text_style_two {
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      font-style: normal;
+      font-weight: 500;
+      color: #ffffff;
+      font-family: Poppins;
+      text-align: left;
+  }

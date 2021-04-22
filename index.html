@@ -12,7 +12,8 @@
     <!-- Custom style for the templete -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- crousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -28,58 +29,48 @@
                 <nav class="nav_link">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
-
+                            <a href="#" class="underline">Home</a>
                         </li>
                         <li>
-                            <a href="#">How it works</a>
-
+                            <a href="#" class="underline">How it works</a>
                         </li>
                         <li>
-                            <a href="#">Our Team</a>
-
+                            <a href="#" class="underline">Our Team</a>
                         </li>
                         <li>
-                            <a href="#">Features</a>
-
+                            <a href="#" class="underline">Features</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
-
+                            <a href="#" class="underline">Blog</a>
                         </li>
-
                     </ul>
                 </nav>
                 <!-- login and register -->
-                <nav class="nav_link_one ">
+                <div class="nav_link_one ">
                     <ul>
                         <li>
-                            <a href="# ">Get in Touch </a>
-
+                            <a href="#" class="underline">Get in Touch </a>
                         </li>
                         <li>
-                            <a href="tel:123456789 ">
+                            <a href="tel:123456789">
                                 <i class=" fas fa-phone-alt "></i>
-
                             </a>
                         </li>
-                        <li class="bg_sign ">
+                        <li class="bg_sign">
                             <a href="# ">Sign In Here</a>
                         </li>
-
                     </ul>
-                </nav>
+                </div>
             </div>
             <div class="flex_articale ">
                 <div class="card ">
-                    <p class="badge ">INTERNET OF THINGS</p>
+                    <p class="badge ">internet of things</p>
                     <h1>Brainstorming for desired IoT of Things</h1>
                     <p>Measure Your Device Experience</p>
-                    <div class="input_one ">
-                        <input type="text " placeholder="Enter Email Address Here ">
+                    <div>
+                        <input type="text/email" placeholder="Enter Email Address Here">
                         <button>Sign up</button>
                     </div>
-
                 </div>
                 <div class="banner_image">
                     <img src="./assets/img/710-layers.png " alt="image ">
@@ -116,9 +107,12 @@
                     CMOS sensor, LEDs, TFTs,EPROMs, aggressive technology.
                 </p>
             </article>
-            <video controls>
-                <source src="./assets/img/mov_bbb.mp4" type="video/mp4">
-              </video>
+            <div class="video">
+                <img src="./assets/img/image.png" alt="video">
+                <a href="./assets/img/mov_bbb.mp4">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
         </div>
 
     </section>
@@ -142,68 +136,81 @@
     </section>
     <!-- Services section end -->
     <!-- crousel section -->
-    <section class="crousel space_three ">
+    <section class="crousel space_three container">
         <div class="testimonial ">
             <p>TESTIMONIAL</p>
             <h3>Feedbacks from Our Client</h3>
         </div>
-        <div class="crousel_flex">
-            <div class="testimonial_card ">
-                <img src="./assets/img/toppng.com-quotation-marks-blue-quotation-marks-1000x693.png" alt="">
+        <div class="center">
+            <div class="box_two">
+                <img src="./assets/img/1.png" class="image_three" alt="qutes">
                 <p>I was so pleased to find a bunch of designers who actually wanted to follow my designs brief provided the perfect book cover. my designer Pranaw was like an angel sent from heaven; nothing was too mush trouble. I am so thankful to Successive
                     Technologies!”
                 </p>
-                <div class="testimonial_author">
-                    <img src="./assets/img/Layer_25.png" alt="author">
-                    <p class="name">Madeline Drew</p>
-                    <p>Author of Black and white</p>
+                <div class="author">
+                    <img src="./assets/img/Ellipse_4.png" alt="Author">
+                    <p class="drew">Madeline Drew</p>
+                    <p> Author of Black and white</p>
                 </div>
             </div>
-            <div class="testimonial_card ">
-                <img src="./assets/img/toppng.com-quotation-marks-blue-quotation-marks-1000x693.png" alt="">
+            <div class="box_two">
+                <img src="./assets/img/1.png" class="image_three" alt="qutes">
                 <p>I was so pleased to find a bunch of designers who actually wanted to follow my designs brief provided the perfect book cover. my designer Pranaw was like an angel sent from heaven; nothing was too mush trouble. I am so thankful to Successive
                     Technologies!”
                 </p>
-                <div class="testimonial_author">
-                    <img src="./assets/img/Layer_25.png" alt="author">
-                    <p class="name">Madeline Drew</p>
-                    <p>Author of Black and white</p>
+                <div class="author">
+                    <img src="./assets/img/Ellipse_4.png" alt="Author">
+                    <p class="drew">Madeline Drew</p>
+                    <p> Author of Black and white</p>
+                </div>
+            </div>
+            <div class="box_two">
+                <img src="./assets/img/1.png" class="image_three" alt="qutes">
+                <p>I was so pleased to find a bunch of designers who actually wanted to follow my designs brief provided the perfect book cover. my designer Pranaw was like an angel sent from heaven; nothing was too mush trouble. I am so thankful to Successive
+                    Technologies!”
+                </p>
+                <div class="author">
+                    <img src="./assets/img/Ellipse_4.png" alt="Author">
+                    <p class="drew">Madeline Drew</p>
+                    <p> Author of Black and white</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- crousel section -->
 
-    <!-- article section -->
-    <article class="newsletter ">
+    <!-- subscribe  section -->
+    <section class="newsletter">
         <div class="newsletter_one ">
             <div class="img_curve ">
                 <img src="./assets/img/Path_3957.png " alt=" ">
             </div>
             <div class="subcriber ">
-                <p>NEWSLETTER</p>
+                <p class="newsletter_p">NEWSLETTER</p>
                 <h3>Subcribe to get uptodate with latest news</h3>
-                <input type="text " placeholder="Enter Email Address Here ">
-                <button>Sign up</button>
-                <p>Your privacy is our concern we will never spam chears</p>
+                <div class="input_field">
+                    <input type="text " placeholder="Enter Email Address Here ">
+                    <button>Sign up</button>
+                </div>
+                <p class="privacy"> Your privacy is our concern we will never spam chears</p>
             </div>
             <div class="img_curve_one ">
                 <img src="./assets/img/Ellipse_157.png " alt=" ">
             </div>
         </div>
-    </article>
-    <!-- artical section end -->
+    </section>
+    <!-- subscribe section end -->
     <!-- card section -->
     <section class="bg_section ">
         <div class="container ">
             <div class="data_flex ">
                 <div class="price ">
-                    <p>PRICING</p>
+                    <p>pricing</p>
                     <h3>Simple, Transparent Pricing</h3>
                 </div>
                 <div class="startup ">
                     <div class="content ">
-                        <p>Startup</p>
+                        <p class="standup">Startup</p>
                         <h1>$10.50</h1>
                         <p>Per Month</p>
                     </div>
@@ -227,12 +234,11 @@
                         </tr>
 
                     </table>
-                    <div class="button_card "><button>Buy Now</button></div>
-
+                    <button class="button_card ">Buy Now</button>
                 </div>
                 <div class="startup ">
                     <div class="content ">
-                        <p>Startup</p>
+                        <p class="standup">Startup</p>
                         <h1>$10.50</h1>
                         <p>Per Month</p>
                     </div>
@@ -256,12 +262,11 @@
                         </tr>
 
                     </table>
-                    <div class="button_card "><button>Buy Now</button></div>
-
+                    <button class="button_card ">Buy Now</button>
                 </div>
                 <div class="startup ">
                     <div class="content ">
-                        <p>Startup</p>
+                        <p class="standup">Startup</p>
                         <h1>$10.50</h1>
                         <p>Per Month</p>
                     </div>
@@ -285,8 +290,7 @@
                         </tr>
 
                     </table>
-                    <div class="button_card "><button>Buy Now</button></div>
-
+                    <button class="button_card ">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -300,39 +304,51 @@
                     <h3>Check Our Latest Updates</h3>
                 </div>
                 <div class="blog ">
-                    <img class="card-img-top " src="./assets/img/Layer_23.png " alt=" ">
+                    <div class="card-img-top">
+                        <img class="card-img-top" src="./assets/img/Layer_23.png " alt="blog">
+                    </div>
                     <p>A blog by Iotify</p>
                     <h4>Device Simulator Functions and their work.</h4>
                     <div class="author ">
-                        <img src="./assets/img/Layer_25.png " alt=" ">
-                        <h5>Dean Ambrose</h5>
-                        <p>01 May 2019</p>
+                        <img src="./assets/img/Layer_25.png " alt="Dean ">
+                        <div class="name_date">
+                            <h5>Dean Ambrose</h5>
+                            <p>01 May 2019</p>
+                        </div>
+                        <label class="lable">15.8k</label>
                     </div>
                 </div>
                 <div class="blog ">
-                    <img class="card-img-top " src="./assets/img/Layer_23.png " alt=" ">
+                    <div class="card-img-top">
+                        <img class="card-img-top" src="./assets/img/Layer_23.png " alt=" ">
+                    </div>
                     <p>A blog by Iotify</p>
-                    <h4>Device Simulator Functions and their work.</h4>
+                    <h4>The Principles of Internet Things and their theory</h4>
                     <div class="author ">
-                        <img src="./assets/img/Layer_25.png " alt=" ">
-                        <h5>Dean Ambrose</h5>
-                        <p>01 May 2019</p>
-
+                        <img src="./assets/img/Layer_25.png " alt="Dean ">
+                        <div class="name_date">
+                            <h5>Jessica Jon</h5>
+                            <p>01 May 2019</p>
+                        </div>
+                        <label class="lable">13.8k</label>
                     </div>
                 </div>
                 <div class="blog ">
-                    <img class="card-img-top " src="./assets/img/Layer_23.png " alt=" ">
+                    <div class="card-img-top">
+                        <img class="card-img-top" src="./assets/img/Layer_23.png " alt=" ">
+                    </div>
                     <p>A blog by Iotify</p>
-                    <h4>Device Simulator Functions and their work.</h4>
+                    <h4>Testing Performance on various data test.</h4>
                     <div class="author ">
-                        <img src="./assets/img/Layer_25.png " alt=" ">
-                        <h5>Dean Ambrose</h5>
-                        <p>01 May 2019</p>
-
+                        <img src="./assets/img/Layer_25.png " alt="Dean ">
+                        <div class="name_date">
+                            <h5>Jessica Jon</h5>
+                            <p>01 May 2019</p>
+                        </div>
+                        <label>10.3k</label>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- card section end -->
@@ -347,9 +363,9 @@
                     <div class="input ">
                         <input type="text " placeholder="Name ">
                         <input type="text " placeholder="Email address ">
-                        <input type="text " placeholder="Pone number ">
-                        <button>submit</button></div>
-
+                        <input type="text " placeholder="Phone number ">
+                        <button>Sign Up </button>
+                    </div>
                 </form>
 
                 <div class="img_form ">
@@ -359,48 +375,61 @@
         </div>
     </section>
     <!-- form section end -->
-    <!-- articale section -->
-    <article class="connectors ">
-        <div class="connector_flex ">
-            <div class="connect_img ">
+    <!-- Introducing Connectors section -->
+    <section id="connectors">
+        <div class="container connector_flex ">
+            <div class="connect_img">
                 <img src="./assets/img/56-layers.png " alt="map ">
             </div>
             <div class="integration ">
-                <p>Integration</p>
+                <label>Integration</label>
                 <h3>Introducing Connectors</h3>
-                <p>Device 3D™ is a physics based 3D device simulator for any device type and includes material properties for the commonly used semiconductor materials in use today. This allows simulation of devices such as solar cells, CMOS sensors, LEDs,
-                    TFTs, EPROMs, aggressive technology.</p>
+                <p>
+                    <span>Device 3D™ is a physics based 3D device simulator for any device type and includes material properties for the commonly used semiconductor materials in use today. </span>This allows simulation of devices such as solar cells,
+                    CMOS sensors, LEDs, TFTs, EPROMs, aggressive technology.</p>
             </div>
         </div>
-    </article>
-    <!-- articale section end-->
+    </section>
+    <!--Introducing Connectors section end-->
     <!-- Our Experience Engineers  -->
-    <section class="bg_engineear ">
-        <div class="container ">
+    <section class="bg_engineear">
+        <div class="container space_one positioning">
             <div class="experience_flex ">
-                <div class="team ">
+                <div class="team">
                     <p>OUR TEAM</p>
                     <h3>Our Experience Engineers </h3>
                 </div>
                 <div class="card_two ">
-                    <img src="./assets/img/Layer_37 (2).png " alt="card ">
-                    <button><img src="./assets/img/arrow.png " alt=" "></button>
+                    <img src="./assets/img/Layer_37 (2).png " class="effect" alt="card ">
+                    <button><img src="./assets/img/arrow.png " alt="share ">
+                        
+                                <a href=""><i class=" fab fa-linkedin"></i></a>
+                                <a href=""><i class=" fab fa-facebook-f"></i></a>
+                    </button>
                     <h4>Dean Ambro</h4>
                     <p>Product Manager, IOTIFY</p>
                 </div>
                 <div class="card_two ">
-                    <img src="./assets/img/Layer_37 (2).png " alt="card ">
-                    <button><img src="./assets/img/arrow.png " alt=" "></button>
+                    <img src="./assets/img/Layer_37 (2).png " class="effect" alt="card ">
+                    <button><img src="./assets/img/arrow.png " alt="share ">
+                        <a href=""><i class=" fab fa-linkedin"></i></a>
+                        <a href=""><i class=" fab fa-facebook-f"></i></a>
+            </button>
                     <h4>Jennifer John</h4>
                     <p>Product Manager, IOTIFY</p>
                 </div>
                 <div class="card_two ">
-                    <img src="./assets/img/Layer_37 (2).png " alt="card ">
-                    <button><img src="./assets/img/arrow.png " alt=" "></button>
+                    <img src="./assets/img/Layer_37 (2).png " class="effect" alt="card ">
+                    <button><img src="./assets/img/arrow.png " alt="share ">
+                        
+                        <a href=""><i class=" fab fa-linkedin"></i></a>
+                        <a href=""><i class=" fab fa-facebook-f"></i></a>
+            </button>
                     <h4>Dean Ambro</h4>
                     <p>Product Manager, IOTIFY</p>
                 </div>
             </div>
+            <!-- second card section start -->
             <div class="experience_flex ">
                 <div class="team ">
                     <p>Showcases</p>
@@ -408,26 +437,40 @@
                 </div>
                 <div class="card_three ">
                     <img src="./assets/img/image.png " alt="card ">
-                    <h4>Dean Ambro</h4>
-                    <p>Product Manager, IOTIFY</p>
+                    <p>Dean Ambro</p>
+                    <h4>Product Manager, IOTIFY</h4>
                 </div>
                 <div class="card_five ">
                     <div class="card_four ">
                         <img src="./assets/img/ramon-salinero-271002-unsplash_(1).png " alt="card ">
-                        <p>13rd July, 2019</p>
-                        <h4>Empowering IoT education</h4>
+                        <p class="education">13rd July, 2019</p>
+                        <h4 class="education">Empowering IoT education</h4>
                     </div>
                     <div class="card_four ">
                         <img src="./assets/img/jens-johnsson-685540-unsplash.png " alt="card ">
-                        <p>13rd July, 2019</p>
-                        <h4>5 Reasons To Purchase Desktop Computers</h4>
-
+                        <p class="education">13rd July, 2019</p>
+                        <h4 class="education">5 Reasons To Purchase Desktop Computers</h4>
                     </div>
                     <div class="card_six ">
-                        <img src="./assets/img/rawpixel-668353-unsplash.png " alt=" ">
+                        <div class="image_five">
+                            <img src="./assets/img/rawpixel-668353-unsplash.png " alt=" ">
+                            <div class="situation">
+                                <p>13rd July, 2019</p>
+                                <h3>Smart City simulation</h3>
+                            </div>
+                        </div>
+                        <div class="image_five">
+                            <img src="./assets/img/rawpixel-668353-unsplash.png " alt=" ">
+                            <div class="situation">
+                                <p>11rd Feb, 2021</p>
+                                <h3>Smart Work simulation</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- end section section -->
+            <!-- third section start -->
             <div class="experience_flex ">
                 <div class="team ">
                     <p>Use Cases</p>
@@ -442,32 +485,54 @@
                     <p>White papers are published on the Web and in print by researchers, organization vendors and consultants. </p>
                 </div>
                 <div class="card_seven ">
-                    <h5>IoT Protocol Support</h5>
-                    <p>White papers are published on the Web and in print by researchers, organization vendors and consultants. </p>
+                    <h5>Use Case 2</h5>
+                    <p>Onepager is published on the Web and in print by researchers, organization vendors and consultants.</p>
                 </div>
                 <div class="card_seven ">
-                    <h5>IoT Protocol Support</h5>
-                    <p>White papers are published on the Web and in print by researchers, organization vendors and consultants. </p>
+                    <h5>Use Case 3</h5>
+                    <p>Every avid independent filmmaker has dreamed about making that special interest documentary.</p>
                 </div>
                 <div class="card_seven ">
-                    <h5>IoT Protocol Support</h5>
-                    <p>White papers are published on the Web and in print by researchers, organization vendors and consultants. </p>
+                    <h5>Use Case 3</h5>
+                    <p>Every avid independent filmmaker has dreamed about making that special interest documentary.</p>
                 </div>
                 <div class="card_seven ">
-                    <h5>IoT Protocol Support</h5>
-                    <p>White papers are published on the Web and in print by researchers, organization vendors and consultants. </p>
+                    <h5>Use Case 4</h5>
+                    <p>Every avid independent filmmaker has dreamed about making that special interest documentary.</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end third section -->
     <!-- Our Experience Engineers end -->
     <!-- footer section -->
     <footer class="bg_footer ">
-        <div class="container ">
-            <img src="./assets/img/Image_1.png " alt=" ">
+        <div class="container d_flex">
+            <div class="virtualization">
+                <img src="./assets/img/Image_1.png " alt=" ">
+                <p>IOTIFY is a virtualization platform for the Internet of Things. Our goal is to make IoT solution engineering faster, cheaper and easier for everyone. Get in touch with us to learn more about how we could help.</p>
+            </div>
+            <div class="location">
+                <h4>GET IN TOUCH</h4>
+                <Address>Ternary GmbH 
+                    Birchstrasse 21,
+                    8212, Neuhausen,
+                    Switzerland</Address>
+
+            </div>
+            <div class="link_tag_footer">
+                <h4>GET IN TOUCH</h4>
+                <p>Team@2018 Pixians</p>
+                <h4>FOLLOW US</h4>
+                <a href=""><i class=" fab fa-linkedin"></i></a>
+                <a href=""><i class=" fab fa-facebook-f"></i></a>
+                <a href=""><i class=" fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
     <!-- footer sectection end-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js "></script>
 </body>
 
